@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:sec="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido Administrador</title>
+</head>
+<body>
+<h1>Bienvenido Administrador</h1>
+<p>Hola <span sec:authentication="name">Administrador</span>, has iniciado sesión correctamente.</p>
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Cerrar sesión" />
+</form>
+</body>
+</html>
